@@ -7,11 +7,17 @@ mongoclient.connect(url, function(err, client){
         throw err;
     }
     var db = client.db('playerData');
-    db.collection('test').insert(testJson, function(err, records){
-        if (err) {
+    db.createCollection("playerMovement", function(err){
+        if(err){
             throw err;
         }
-        client.close();
+        db.collection('playerMovement').insert(testJson, function(err, records){
+            if (err) {
+                throw err;
+            }
+            client.close();
+        })
     })
+    
     
 })
