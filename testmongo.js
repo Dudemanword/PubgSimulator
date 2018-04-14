@@ -1,9 +1,17 @@
 var mongoclient = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/playerData";
+var url = "mongodb://localhost:27017/";
+var testJson = require("./data.json");
 
-mongoclient.connect(url, function(err, db){
+mongoclient.connect(url, function(err, client){
     if(err){
         throw err;
     }
-    db.close();
+    var db = client.db('playerData');
+    db.collection('test').insert(testJson, function(err, records){
+        if (err) {
+            throw err;
+        }
+        client.close();
+    })
+    
 })
