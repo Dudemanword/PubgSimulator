@@ -1,0 +1,19 @@
+{
+  "name": "pubgsimulator",
+  "version": "1.0.0",
+  "description": "simulator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dudemanword/PubgSimulator.git"
+  },
+  "author": "Shaun Raj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dudemanword/PubgSimulator/issues"
+  },
+  "homepage": "https://github.com/Dudemanword/PubgSimulator#readme"
+}
