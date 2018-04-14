@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Dudemanword/PubgSimulator/issues"
   },
-  "homepage": "https://github.com/Dudemanword/PubgSimulator#readme"
+  "homepage": "https://github.com/Dudemanword/PubgSimulator#readme",
+  "dependencies": {
+    "mongodb": "^3.0.6"
+  }
 }
